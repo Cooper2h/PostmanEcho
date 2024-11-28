@@ -22,7 +22,7 @@ public class PostmanEchoTest {
                 .statusCode(200) // Проверка статуса ответа
                 .contentType(ContentType.JSON) // Проверка типа ответа
                 .body("data", equalTo("Test")) // Проверка данных в теле ответа
-                .body("headers.content-length", equalTo("4")) // Проверка длины содержимого
+                .body("headers.content-length", equalTo("5")) // Проверка длины содержимого
                 .body("headers.content-type", containsString("text/plain")) // Проверка наличия типа текста
                 .body("headers.user-agent", containsString("Apache-HttpClient")); // Проверка заголовка User-Agent
     }
